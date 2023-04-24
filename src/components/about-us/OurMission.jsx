@@ -1,3 +1,4 @@
+import Image from "next/image";
 import PopupVideo from "../common/PopupVideo";
 
 const OurMission = () => {
@@ -68,10 +69,12 @@ const OurMission = () => {
 
       <div className="col-lg-4 col-xl-5">
         <div className="about_thumb">
-          <img
+          <Image
             className="img-fluid w100"
-            src="assets/images/about/2.webp"
+            src="/assets/images/about/2.webp"
             alt="1.jpg"
+            width={475}
+            height={305}
           />
           {/* <PopupVideo /> */}
         </div>

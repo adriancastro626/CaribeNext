@@ -1,13 +1,16 @@
 import Link from "next/link";
 import Form from "./Form";
+import Image from "next/image";
 
 const ErrorPageContent = () => {
   return (
     <div className="error_page footer_apps_widget">
-      <img
+      <Image
         className="img-fluid img-thumb"
         src="/assets/images/resource/error.png"
         alt="error.png"
+        width={270}
+        height={265}
       />
       <div className="erro_code">
         <h1>Ohh! Page Not Found</h1>

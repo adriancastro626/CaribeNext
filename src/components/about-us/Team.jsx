@@ -46,13 +46,13 @@ const Team = () => {
                   <ul className="social_icon">
                     {item.socialList.map((social, i) => (
                       <li className="list-inline-item" key={i}>
-                        <a
+                        <Link
                           href={social.liveLink}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           <i className={`fa ${social.icon}`}></i>
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -64,7 +64,7 @@ const Team = () => {
                 <h4>
                   {" "}
                   <Link href={`/agent-details/${item.id}`}>
-                    <a>{item.name}</a>
+                    {item.name}
                   </Link>
                 </h4>
                 <p>{item.type}</p>
