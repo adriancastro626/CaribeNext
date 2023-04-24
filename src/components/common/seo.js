@@ -9,11 +9,11 @@ const Seo = ({ pageTitle, font }) => (
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta
         name="keywords"
-        content="advanced custom search, agency, agent, business, clean, corporate, directory, google maps, homes, idx agent, listing properties, membership packages, property, real broker, real estate, real estate agent, real estate agency, realtor"
+        content="Develop and manage hotel investments of superior standards in a sustainable, profitable manner and with a high-level team."
       />
       <meta
         name="description"
-        content="FindHouse - Real Estate React Template"
+        content="Caribe Hospitality"
       />
       <meta name="ibthemes" content="ATFN" />
       <meta
