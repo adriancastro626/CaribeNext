@@ -1,6 +1,7 @@
 import agentsTeam from "../../data/agents";
 import Slider from "react-slick";
 import Link from "next/link";
+import Image from "next/image";
 
 const Team = () => {
   const settings = {
@@ -41,9 +42,9 @@ const Team = () => {
           <div className="item" key={item.id}>
             <div className="team_member">
               <div className="thumb">
-                <img className="img-fluid w100" src={item.img} alt="5.jpg" />
+                <Image className="img-fluid w100" src={item.img} alt="5.jpg" width={400} height={400} />
                 <div className="overylay">
-                  <ul className="social_icon">
+                  {/* <ul className="social_icon">
                     {item.socialList.map((social, i) => (
                       <li className="list-inline-item" key={i}>
                         <Link
@@ -55,7 +56,7 @@ const Team = () => {
                         </Link>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
               {/* End .thumb */}
@@ -63,7 +64,11 @@ const Team = () => {
               <div className="details">
                 <h4>
                   {" "}
-                  <Link href={`/agent-details/${item.id}`}>
+                  <Link
+                  //  href={`/agent-details/${item.id}`}
+                  href='#'
+                   
+                   >
                     {item.name}
                   </Link>
                 </h4>
