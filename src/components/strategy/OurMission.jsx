@@ -47,8 +47,10 @@ const OurMission = () => {
         <div className="about_thumb">
           <Image
             className="img-fluid w100"
-            src="assets/images/corporate/1.jpg"
+            src="/assets/images/corporate/1.jpg"
             alt="1.jpg"
+            width={500}
+            height={400}
           />
           {/* <PopupVideo /> */}
         </div>
