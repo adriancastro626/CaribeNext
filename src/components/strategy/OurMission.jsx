@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const OurMission = () => {
   const missionContent = [
@@ -44,7 +45,7 @@ const OurMission = () => {
 
       <div className="col-lg-4 col-xl-5">
         <div className="about_thumb">
-          <img
+          <Image
             className="img-fluid w100"
             src="assets/images/corporate/1.jpg"
             alt="1.jpg"
