@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Slider from "react-slick";
 import properties from "../../data/properties";
+import Image from "next/image";
 
 const FeaturedProperties = () => {
   const settings = {
@@ -42,39 +43,11 @@ const FeaturedProperties = () => {
           <div className="item" key={item.id}>
             <div className="feat_property home3">
               <div className="thumb">
-                <img className="img-whp" src={item.img} alt="fp1.jpg" />
+                <Image className="img-whp" src={item.img} alt="fp1.jpg" width={500} height={400} />
                 <div className="thmb_cntnt">
-                  {/* <ul className="tag mb0">
-                    {item.saleTag.map((val, i) => (
-                      <li className="list-inline-item" key={i}>
-                        <a href="#">{val}</a>
-                      </li>
-                    ))}
-                  </ul> */}
-
-                  {/* <ul className="icon mb0">
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-transfer-1"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-heart"></span>
-                      </a>
-                    </li>
-                  </ul> */}
-
-                  {/* Ver Propiedad */}
+                 
 
 
-
-                  {/* <Link href={`/listing-details-v1/${item.id}`}>
-                    <a className="fp_price">
-                      {item.price}
-                      <small>Ver Propiedad</small>
-                    </a>
-                  </Link> */}
 
 
                 </div>
@@ -86,7 +59,7 @@ const FeaturedProperties = () => {
                     {/* <Link href={`/listing-details-v1/${item.id}`}> */}
                     <Link href={`${item.url}`} target='_blank'>
                     {/* <Link href={`#`}> */}
-                      <a>{item.title}</a>
+                      {item.title}
                     </Link>
                   </h4>
                   <p>
@@ -97,9 +70,9 @@ const FeaturedProperties = () => {
                   <ul className="prop_details mb0">
                     {item.itemDetails.map((val, i) => (
                       <li className="list-inline-item" key={i}>
-                        <a href="#">
+                        <p href='#'>
                           {val.name}: {val.number}
-                        </a>
+                        </p>
                       </li>
                     ))}
                   </ul>

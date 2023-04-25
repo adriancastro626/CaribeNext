@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Slider from "react-slick";
 import agentsTeam from "../../data/agents";
+import Image from "next/image";
 
 const Team = () => {
   const settings = {
@@ -41,18 +42,18 @@ const Team = () => {
         <div className="item" key={item.id}>
           <div className="team_member home4">
             <div className="thumb">
-              <img className="img-fluid w100" src={item.img} alt="5.jpg" />
+              <Image className="img-fluid w100" src={item.img} alt="5.jpg" height={200} width={300} />
               <div className="overylay">
                 <ul className="social_icon">
                   {item.socialList.map((social, i) => (
                     <li className="list-inline-item" key={i}>
-                      <a
+                      <Link
                         href={social.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <i className={`fa ${social.icon}`}></i>
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

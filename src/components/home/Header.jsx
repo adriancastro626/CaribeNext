@@ -28,16 +28,7 @@ const Header = () => {
 
         <Link href="/">
           <a className="navbar_brand float-start dn-smd">
-            {/* <img
-              className="logo1 img-fluid"
-              src="/assets/images/header-logo.png"
-              alt="header-logo.png"
-            />
-            <img
-              className="logo2 img-fluid"
-              src="/assets/images/header-logo2.png"
-              alt="header-logo2.png"
-            /> */}
+        
             <span>Caribe Hospitality</span>
           </a>
         </Link>
