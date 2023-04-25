@@ -3,8 +3,8 @@ const Leadership = () => {
     <>
       <h3 className="title mb-3">LEADERSHIP IN ENERGY AND ENVIRONMENTAL DESIGN (LEED)</h3>
       <p className="mb25">
-      Some of our projects are selected for the Leadership in Energy and Environmental Design (LEED) 
-      certification, under the "New Construction" classification system, which consists of the development of sustainable constructions. 
+      {`Some of our projects are selected for the Leadership in Energy and Environmental Design (LEED) 
+      certification, under the "New Construction" classification system, which consists of the development of sustainable constructions. `}
       </p>
       
       <p className="mb25">
