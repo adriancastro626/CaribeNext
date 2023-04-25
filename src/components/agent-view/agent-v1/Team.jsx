@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addAgentItemLength } from "../../../features/agent/agentSlice";
 import agents from "../../../data/agents";
+import Image from "next/image";
 
 const Team = () => {
     const { name, category, city, listen } =
@@ -35,7 +36,7 @@ const Team = () => {
                     <div className="thumb">
                         <Link href={`/agent-details/${item.id}`}>
                             <a>
-                                <img
+                                <Image
                                     className="img-whp"
                                     src={item.img}
                                     alt="bh1.jpg"

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import Footer from "../../components/common/footer/Footer";
 import Header from "../../components/common/header/DefaultHeader";
@@ -33,7 +34,7 @@ const index = () => {
                 <div className="col-lg-12">
                   <div className="feat_property list style2 agent">
                     <div className="thumb">
-                      <img
+                      <Image
                         className="img-whp"
                         src="/assets/images/team/11.jpg"
                         alt="11.jpg"

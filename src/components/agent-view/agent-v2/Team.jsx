@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import agents from "../../../data/agents";
 import { addAgentItemLength } from "../../../features/agent/agentSlice";
+import Image from "next/image";
 
 const Team = () => {
     const { name, category, city, listen } =
@@ -35,7 +36,7 @@ const Team = () => {
                     <div className="thumb">
                         <Link href={`/agent-details/${item.id}`}>
                             <a>
-                                <img
+                                <Image
                                     className="img-whp"
                                     src={item.img}
                                     alt="bh1.jpg"
@@ -46,7 +47,7 @@ const Team = () => {
                             <ul className="tag mb0">
                                 <li className="list-inline-item dn"></li>
                                 <li className="list-inline-item">
-                                    <a href="#">{item.noOfListings} Listings</a>
+                                    <Link href="#">{item.noOfListings} Listings</Link>
                                 </li>
                             </ul>
                         </div>
@@ -57,22 +58,22 @@ const Team = () => {
                         <div className="tc_content">
                             <h4>
                                 <Link href={`/agent-details/${item.id}`}>
-                                    <a>{item.name}</a>
+                                    {item.name}
                                 </Link>
                             </h4>
                             <p className="text-thm">{item.type}</p>
                             <ul className="prop_details mb0">
                                 <li>
-                                    <a href="#">Office: {item.office}</a>
+                                    <Link href="#">Office: {item.office}</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Mobile: {item.mobile}</a>
+                                    <Link href="#">Mobile: {item.mobile}</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Fax: {item.fax}</a>
+                                    <Link href="#">Fax: {item.fax}</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Email: {item.email}</a>
+                                    <Link href="#">Email: {item.email}</Link>
                                 </li>
                             </ul>
                         </div>
@@ -82,7 +83,7 @@ const Team = () => {
                             <ul className="fp_meta float-start mb0">
                                 {item.socialList.map((social, i) => (
                                     <li className="list-inline-item" key={i}>
-                                        <a
+                                        <Link
                                             href={social.liveLink}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -90,17 +91,17 @@ const Team = () => {
                                             <i
                                                 className={`fa ${social.icon}`}
                                             ></i>
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
                             <div className="fp_pdate float-end ">
-                                <Link href={`/agent-details/${item.id}`}>
+                                {/* <Link href={`/agent-details/${item.id}`}>
                                     <a className="text-thm">
                                         View My Listings{" "}
                                         <i className="fa fa-angle-right"></i>
                                     </a>
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                         {/* End .fp_footer */}
