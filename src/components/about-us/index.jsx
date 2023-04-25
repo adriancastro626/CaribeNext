@@ -1,12 +1,12 @@
-import CallToAction from "../common/CallToAction";
+
 import CopyrightFooter from "../common/footer/CopyrightFooter";
 import Footer from "../common/footer/Footer";
 import Header from "../common/header/DefaultHeader";
 import MobileMenu from "../common/header/MobileMenu";
-import Partners from "../common/Partners";
+
 import PopupSignInUp from "../common/PopupSignInUp";
 import WhyChoose from "../common/WhyChoose";
-import Testimonial from "../home-7/Testimonial";
+
 import BreadCrumbBanner from "./BreadCrumbBanner";
 import Team from "./Team";
 import OurMission from "./OurMission";
@@ -95,7 +95,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="testimonial_grid_slider style2 gutter-x15">
-                <Testimonial />
+            
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ const index = () => {
             </div>
           </div>
           <div className="row">
-            <Partners />
+        
           </div>
         </div>
       </section>
@@ -122,7 +122,7 @@ const index = () => {
       {/* <!-- Start Call to Action --> */}
       <section className="start-partners bgc-thm pt50 pb50">
         <div className="container">
-          <CallToAction />
+         
         </div>
       </section>
 
