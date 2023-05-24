@@ -27,17 +27,17 @@ const OurMission = () => {
     <>
       <div className="col-lg-8 col-xl-7">
         <div className="about_content">
-          <p className="large">
+          <p className="large" style={{textAlign: 'justify'}}>
           Caribe Hospitality is committed to developing hotel assets that operate
            profitably in accordance with applicable legal,
            financial, environmental, energy and other requirements.
           </p>
-          <p>
+          <p style={{textAlign: 'justify'}}>
           We are committed to the continuous improvement of our business processes, 
           to environmental and energy performance, and to our Sustainability and Energy 
           Management Systems. Caribe Hospitality is specifically committed to:
           </p>
-          <p>
+          <p style={{textAlign: 'justify'}}>
           <li>Environmental protection and pollution prevention.</li>
 
           <li>Establish environmental and energy objectives and goals for the SGS and SGE, as well as their respective review for the improvement of environmental and energy performance.</li>

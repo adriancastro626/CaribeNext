@@ -18,7 +18,7 @@ const index = () => {
       <PopupSignInUp />
 
       {/* <!-- Our Error Page --> */}
-      <section className="our-error bgc-f7">
+      <section className="our-error bgc-f7 ">
         <div className="container">
           <div className="row">
             <div className="col-lg-10 offset-lg-1 text-center">

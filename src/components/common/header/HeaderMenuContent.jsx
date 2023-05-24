@@ -240,6 +240,12 @@ const HeaderMenuContent = ({ float = "" }) => {
     // Sustainability
   ];
 
+  const leadershipdrop = [
+    { id: 14, name: "Leadership", routerPath: "/leadership" },
+    { id: 15, name: "Executive Team", routerPath: "/executiveteam" },
+    // Sustainability
+  ];
+
   return (
     <ul
       id="respMenu"
@@ -477,7 +483,36 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li> */}
       {/* End .dropitem */}
 
-      <li className="last">
+      <li className="dropitem">
+        <a
+          href="#"
+          className={
+            leadershipdrop.some((leadershipdrop) => leadershipdrop.routerPath === route.pathname)
+              ? "ui-active"
+              : undefined
+          }
+        >
+          <span className="title">Leadership</span>
+          <span className="arrow"></span>
+        </a>
+        <ul className="sub-menu ">
+          {leadershipdrop.map((item) => (
+            <li key={item.id}>
+              <Link href={item.routerPath}>
+                <a
+                  className={
+                    route.pathname === item.routerPath ? "ui-active" : undefined
+                  }
+                >
+                  {item.name}
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </li>
+
+      {/* <li className="last">
         <Link href="/leadership">
           <a
             className={route.pathname === "/leadership" ? "ui-active" : undefined}
@@ -485,7 +520,7 @@ const HeaderMenuContent = ({ float = "" }) => {
             Leadership
           </a>
         </Link>
-      </li>
+      </li> */}
       {/* End .dropitem */}
 
       {/* <li className={`list-inline-item list_s ${float}`}>

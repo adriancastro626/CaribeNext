@@ -27,8 +27,8 @@ const index = () => {
       <section className="about-section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
+            <div className="col-lg-6 offset-lg-0">
+              <div className="main-title text-left">
                 <h2 className="mt0">Our Strategy</h2>
               </div>
             </div>

@@ -8,11 +8,11 @@ const HeroSlider = () => {
     speed: 1200,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
   };
 
   return (
-    <Slider {...settings} arrows={true}>
+    <Slider {...settings} arrows={false}>
       <div className="slide slide-one image-1"></div>
       <div className="slide slide-one image-2"></div>
       <div className="slide slide-one image-1"></div>

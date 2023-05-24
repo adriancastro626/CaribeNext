@@ -42,9 +42,9 @@ const index = () => {
             <div className="col-lg-12">
               <div className="home_content home4">
                 <div className="home-text text-center">
-                  <h2 className="fz55">We bring development and sustainable</h2>
-                  <p className="fz18 color-white">
-                  economic growth to different countries in the region
+                  <h2 className="fz55">Caribe Hospitality</h2>
+                  <p className="fz18 color-white" >
+                  We bring Development and Sustainable Economic Growth to Different Countries in the Region
                   </p>
                 </div>
                 {/* <GlobalHeroFilter className="home4" /> */}
@@ -125,8 +125,8 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>About us</h2>
-                <p>We have developed 14 hotels in 6 countries</p>
+                <h2>About Us</h2>
+                <p>We have Developed 14 hotels in 6 countries</p>
               </div>
             </div>
           </div>

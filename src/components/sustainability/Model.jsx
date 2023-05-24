@@ -2,7 +2,7 @@ const Model = () => {
   return (
     <>
       <h3 className="title mb-3">Our Sustainability Model</h3>
-      <p className="mb25">
+      <p className="mb25" style={{textAlign: 'justify'}}>
       Caribe Hospitality is committed to the development of hotel assets
        that operate profitably in compliance with legal, financial, 
        environmental and other applicable requirements.
@@ -11,7 +11,7 @@ const Model = () => {
       </p>
       <h3 className="title mb-3">Scope of our management system</h3>
       
-      <p className="mb25">
+      <p className="mb25" style={{textAlign: 'justify'}}>
       Design, construction and operation management in Caribe Hospitality 
       hotels that have financing from the Inter-American Development Bank 
       and are incorporated into the Caribe Hospitality Sustainable Management

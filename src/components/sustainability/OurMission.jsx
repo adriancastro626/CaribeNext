@@ -26,15 +26,15 @@ const OurMission = () => {
     <>
       <div className="col-lg-8 col-xl-7">
         <div className="about_content">
-          <p className="large">
+          <p className="large" style={{textAlign: 'justify'}}>
           We develop and manage hotel investments of superior
            standards in a sustainable, profitable manner and with a high-level team.
           </p>
-          <p>
+          <p style={{textAlign: 'justify'}}>
           Globalization has proven to be a challenge for Latin America and the Caribbean,
            this phenomenon means an increase in trade in the region and the rest of the world.
           </p>
-          <p>
+          <p style={{textAlign: 'justify'}}>
           As a consequence, there is a demand for high-quality products and services. This is especially reflected in the challenge
            of providing hotel infrastructure that can be adapted to the profile of each traveler.
          

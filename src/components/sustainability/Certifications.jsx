@@ -2,7 +2,7 @@ const Certifications = () => {
   return (
     <>
       <h3 className="title mb-3">OTHER CERTIFICATIONS</h3>
-      <p className="mb25">
+      <p className="mb25" style={{textAlign: 'justify'}}>
       Our environmental commitment has led us to adhere to other monitoring and improvement programs for our operations, such as the Certification for Tourism Sustainability of the Costa Rican Tourism Institute and the Ecological Blue Flag in the Climate Change category. 
       </p>
       

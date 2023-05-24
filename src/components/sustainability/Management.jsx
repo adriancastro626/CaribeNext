@@ -2,7 +2,7 @@ const Management = () => {
   return (
     <>
       <h3 className="title mb-3">Sustainability Management System</h3>
-      <p className="mb25">
+      <p className="mb25" style={{textAlign: 'justify'}}>
       The organization has a sustainability management system, initially implemented in 2011 and adapted to the requirements 
       of the ISO14001 standard since 2016. With this reference framework, 
       the company is able to effectively manage and mitigate its environmental impacts during the design, construction and operation of hotels.
